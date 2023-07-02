@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="{{url_for('static', filename='keryx2.png')}}">
+  <title>Keryx</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body style="background-color:#EFF2F3">
+  <div class="container">
+    <h1><u>About us!</u></h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('services') }}">Services</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div><img style="position:relative; left:500px; top:26px;" src="/static/keryx_logo.png" alt="logo" width="0" height="350"></div>
+  <div class="main_box">
+    <input type="checkbox" id="check">
+    <div class="btn_one">
+      <label for="check">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+    <div class="sidebar_menu">
+      <div class="logo">
+        <a href="{{ url_for('home') }}">Keryx</a>
+          </div>
+      <div class="menu">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <ul>
+          <li><i class="fas fa-qrcode"></i>
+            <a href="{{ url_for('home') }}">Dashboard</a>
+          </li>
+          <li>
+            <i class="fas fa-link"></i>
+            <a href="{{ url_for('home') }}">Account</a>
+          </li>
+          <li>
+            <i class="fas fa-stream"></i>
+            <a href="{{ url_for('home') }}">Your Orders</a>
+          </li>
+          <li>
+            <i class="fas fa-question-circle"></i>
+            <a href="{{ url_for('about') }}">About</a>
+          </li>
+          <li>
+            <i class="fas fa-sliders-h"></i>
+            <a href="{{ url_for('services') }}">Services</a>
+          </li>
+          <li>
+            <i class="fas fa-phone-volume"></i>
+            <a href="{{ url_for('contact') }}">Contact</a>
+          </li>
+          <li>
+          <i class="far fa-comments"></i>
+            <a href="{{ url_for('home') }}">Feedback</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_media">
+        <ul>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <img style="position:absolute; left:950px; top:350px; box-shadow: 0 5px 20px rgba(0,0,0,0.4);" src="/static/keryx_logo.png" width="500" height="350">
+  <div class="p1container">
+    <p1>We made things easy for you.This website is <br>a helping platform for those who wanted show there passions<br>towards some beautiful artworks such as <br>* Drawing<br>* Music<br>* Logo Designing<br>* Wallpaper Designing<br>* Photography<br>* Videography<br>* Painting<br>* Story writing<br>and more artworks.We provide services which enables you to earn through this website and helps you to<br>Chase your dreams towards your passions.<br>Lets get started by joining our family "Create a new account on keryx NOW!"<br>We try our heard to keep on your trust on keryx.<br>And we promiss to work hard to become a part of your success.<br></p1>
+  </div>
+</body>
+</html>
